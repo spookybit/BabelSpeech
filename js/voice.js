@@ -23,14 +23,17 @@ function setVoice() {
 
 function setMessage() {
   msg.text = this.value;
-  console.log(msg.text);
 }
 
-function play() {
-  speechSynthesis.speak(msg);
+function play(start = true) {
+  speechSynthesis.cancel();
+  if (start) {
+    speechSynthesis.speak(msg);
+  }
 }
 
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
 voicesDropdown.addEventListener('change', setVoice);
 message.addEventListener('change', setMessage);
 speakButton.addEventListener('click', play);
+stopButton.addEventListener('click', () => play(false));

@@ -2,18 +2,26 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Buddy</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="translator">
-      <select name="voice" id="voices">
-        <option value="">Select A Language</option>
-      </select>
+      <div class="col-3 voice">
+        <select name="voice" id="voices">
+          <option value="">Select A Language</option>
+        </select>
+      </div>
 
-      <textarea name="text">Hello</textarea>
-      <button id="stop">Stop</button>
-      <button id="speak">Speak</button>
+      <div class="col-8 text">
+        <textarea name="text">Hello</textarea>
+      </div>
+      <div class="col-1 buttons">
+        <button id="stop" class="button">Stop</button>
+        <button id="speak" class="button">Speak</button>
+      </div>
     </div>
 
   </body>
