@@ -2,8 +2,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 [class*="col-"] {
-  width: 100%
+  width: 100%;
+  float: left;
 }
 
 @media only screen and (min-width: 768px) {
@@ -24,13 +32,24 @@
 
 .voice {
   background-color: red;
-  color: red;
+}
+
+[name="voice"], [name="text"], .button{
+  width: 100%;
 }
 
 .text {
   background-color: blue;
 }
 
+/*[name="text"] {
+  width: 100%;
+}*/
+
 .buttons {
   background-color: green;
 }
+
+/*.button {
+  width: 100%;
+}*/
