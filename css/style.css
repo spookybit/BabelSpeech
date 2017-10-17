@@ -29,6 +29,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 4em;
   /*background: rgba(54, 25, 25, .5);*/
 }
 
@@ -60,6 +61,8 @@ h1 {
 [name="voice"], [name="text"], .button{
   -webkit-appearance: none;
   width: 98%;
+  height: 100%;
+  margin: 3px;
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -82,3 +85,7 @@ h1 {
 /*.button {
   padding: 15px 32px;
 }*/
+
+#stop {
+  background-color: red;
+}
