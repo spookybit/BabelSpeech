@@ -6,7 +6,30 @@ body {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: top;
   min-height: 100vh;
+  margin: auto;
+  /*position: relative;*/
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  /*margin: auto;*/
+  /*position: absolute;*/
+  margin-top: 2%;
+  /*background-color: red;*/
+  /*background: rgba(54, 25, 25, .5);*/
+  opacity: .85;
+  padding: 10px;
+  width: 70%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  /*background: rgba(54, 25, 25, .5);*/
 }
 
 [class*="col-"] {
@@ -30,26 +53,32 @@ body {
     .col-12 {width: 100%;}
 }
 
-.voice {
-  background-color: red;
-}
+/*.voice {
+  text-decoration: none;
+}*/
 
 [name="voice"], [name="text"], .button{
-  width: 100%;
+  -webkit-appearance: none;
+  width: 98%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
 }
 
-.text {
+/*.text {
   background-color: blue;
-}
+}*/
 
 /*[name="text"] {
   width: 100%;
 }*/
 
-.buttons {
+/*.buttons {
   background-color: green;
-}
+}*/
 
 /*.button {
-  width: 100%;
+  padding: 15px 32px;
 }*/

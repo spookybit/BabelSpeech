@@ -8,22 +8,27 @@
   </head>
 
   <body>
-    <div class="translator">
-      <div class="col-3 voice">
-        <select name="voice" id="voices">
-          <option value="">Select A Language</option>
-        </select>
-      </div>
+    <div class="page">
 
-      <div class="col-8 text">
-        <textarea name="text">Hello</textarea>
-      </div>
-      <div class="col-1 buttons">
-        <button id="stop" class="button">Stop</button>
-        <button id="speak" class="button">Speak</button>
+      <h1>
+        Random Accents
+      </h1>
+      <div class="translator">
+        <div class="col-3 voice">
+          <select name="voice" id="voices">
+            <option value="">Select A Language</option>
+          </select>
+        </div>
+
+        <div class="col-7 text">
+          <textarea name="text">Hello</textarea>
+        </div>
+        <div class="col-2 buttons">
+          <button id="stop" class="button">Stop</button>
+          <button id="speak" class="button">Speak</button>
+        </div>
       </div>
     </div>
-
   </body>
 
   <script src="js/voice.js"></script>
